@@ -50,13 +50,13 @@ EOD
 echo "🚀 Khởi động dịch vụ wg-easy..."
 docker-compose up -d
 
+# ------------------ HOÀN TẤT ------------------
+echo -e "\n✅ Hoàn tất cài đặt WireGuard VPN với wg-easy!"
+echo "👉 Truy cập: http://${WG_HOST}:51821"
+echo "🔐 Mật khẩu đăng nhập: Hal0cvietn@m@123"
+
 # ------------------ CẤU HÌNH FIREWALL (UFw) ------------------
 echo "🛡️ Cấu hình firewall..."
 sudo ufw allow ssh
 sudo ufw allow 51820/udp
 yes | sudo ufw enable
-
-# ------------------ HOÀN TẤT ------------------
-echo -e "\n✅ Hoàn tất cài đặt WireGuard VPN với wg-easy!"
-echo "👉 Truy cập: http://${WG_HOST}:51821"
-echo "🔐 Mật khẩu đăng nhập: Hal0cvietn@m@123"
