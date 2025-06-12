@@ -11,4 +11,5 @@
 ```bash
 git clone https://github.com/laanhca/wg-setup.git
 cd wg-setup
-sudo bash setup-wg-easy.sh
+chmod +x setup-wg-easy.sh
+./setup-wg-easy.sh
